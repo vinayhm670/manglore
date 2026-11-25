@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+  color: #18332F;
+  background-color: #F7F8F4;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-manrope);
+}
+
+/* Glassmorphism surfaces */
+.glass-surface {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(22, 184, 166, 0.16);
+}
+
+.glass-emerald {
+  background: rgba(16, 45, 53, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(22, 184, 166, 0.22);
+}
+
+.aurora-glow {
+  box-shadow: 0 0 35px -5px rgba(22, 184, 166, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F2ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #164B49;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #087F70;
+}

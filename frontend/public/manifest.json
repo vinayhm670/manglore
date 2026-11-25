@@ -1,0 +1,25 @@
+{
+  "name": "PULSEORA — AI-Powered Wearable Health Intelligence",
+  "short_name": "PULSEORA",
+  "description": "Continuous wearable health monitoring, personalized baseline learning, and explainable early warning platform.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F8F4",
+  "theme_color": "#102D35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health", "lifestyle"]
+}

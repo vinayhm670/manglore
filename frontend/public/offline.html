@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSEORA — Offline Mode</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F7F8F4;
+      color: #18332F;
+      margin: 0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      max-width: 440px;
+      width: 100%;
+      border: 1px solid #E2E8E5;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #102D35;
+    }
+    p {
+      color: #667B75;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .badge {
+      display: inline-block;
+      background: #FEF7EB;
+      color: #E6A23C;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 13px;
+      margin-top: 16px;
+    }
+    .btn {
+      margin-top: 24px;
+      display: inline-block;
+      background: #087F70;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <svg class="icon" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="#087F70" stroke-width="3" stroke-dasharray="4 3"/>
+      <circle cx="50" cy="50" r="32" fill="#102D35"/>
+      <path d="M26 50 H36 L41 38 L46 62 L52 26 L58 70 L63 45 L67 53 L74 50" stroke="#16B8A6" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <h1>PULSEORA Offline</h1>
+    <p>You are currently offline. Cached health data remains accessible, but continuous live telemetry streaming and new alert notifications require network connectivity.</p>
+    <div class="badge">OFFLINE CACHED VIEW</div>
+    <br>
+    <a href="/" class="btn" onclick="window.location.reload(); return false;">Retry Connection</a>
+  </div>
+</body>
+</html>
